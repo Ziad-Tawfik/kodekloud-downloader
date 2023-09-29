@@ -23,12 +23,12 @@ class Topic:
         title = topic.find("h3", class_="lesson_title") or topic.find(
             "div", class_="ld-item-title"
         )
-        print(f"this is title {title}")
-        print(dir(title))
+        #print(f"this is title {title}")
+        #print(dir(title))
         span = title.find("span")
         name = " ".join(span.text.strip().split())
         
-        print(f"this is name {name}")
+        #print(f"this is name {name}")
 
         lessons_urls = topic.find_all("a", class_="ld-topic-row") or topic.find_all(
             "ld-table-list-item-preview"
