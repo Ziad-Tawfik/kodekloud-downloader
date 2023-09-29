@@ -25,8 +25,8 @@ class Topic:
         )
         print(f"this is title {title}")
         print(dir(title))
-        spans = title.find("span")
-        name = " ".join(title.text.strip().split())
+        span = title.find("span")
+        name = " ".join(span.text.strip().split())
         
         print(f"this is name {name}")
 
