@@ -23,6 +23,7 @@ class Topic:
         title = topic.find("h3", class_="lesson_title") or topic.find(
             "div", class_="ld-item-title"
         )
+        spans = title.findall("span")
         name = " ".join(title.text.strip().split())
         print(f"this is title {title}")
         print(f"this is name {name}")
