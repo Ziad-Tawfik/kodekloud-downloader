@@ -124,7 +124,7 @@ def download_course(
                     current_video_url in downloaded_videos
                     and downloaded_videos[current_video_url] > max_duplicate_count
                 ):
-                    pass
+                    continue
                     '''raise SystemExit(
                         f"The folowing video is downloaded more than {max_duplicate_count}."
                         "\nYour cookie might have expired or you don't have access/enrolled to the course."
