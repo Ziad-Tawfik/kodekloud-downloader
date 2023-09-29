@@ -105,15 +105,15 @@ def download_course(
         or main_lesson_content.find_all("div", class_="ld-item-list-items")
     )
     items = [Topic.make(topic) for topic in topics]
-    print(items)
-    print()
+    #print(items)
+    #print()
     downloaded_videos = defaultdict(int)
     for i, item in enumerate(items, start=1):
         for j, lesson in enumerate(item.lessons, start=1):
-            print(item)
+            '''print(item)
             print()
             print(lesson)
-            exit()
+            exit()'''
             file_path = create_file_path(
                 output_dir, course_name, i, item.name, j, lesson.name
             )
