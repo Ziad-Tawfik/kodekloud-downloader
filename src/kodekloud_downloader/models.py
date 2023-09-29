@@ -24,6 +24,8 @@ class Topic:
             "div", class_="ld-item-title"
         )
         name = " ".join(title.text.strip().split())
+        print(f"this is title {title}")
+        print(f"this is name {name}")
 
         lessons_urls = topic.find_all("a", class_="ld-topic-row") or topic.find_all(
             "ld-table-list-item-preview"
